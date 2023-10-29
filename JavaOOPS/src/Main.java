@@ -56,12 +56,12 @@ public class Main {
         int Car1_4 = 0,Car2_4 = 0,Car3_4 = 0;
         try {
             Path path = Paths.get(filePath);
-             Car1_1 = Files.readAllLines(path, StandardCharsets.UTF_8).get(0);
-             Car1_2 = Files.readAllLines(path, StandardCharsets.UTF_8).get(1);
+            Car1_1 = Files.readAllLines(path, StandardCharsets.UTF_8).get(0);
+            Car1_2 = Files.readAllLines(path, StandardCharsets.UTF_8).get(1);
             String  str1= Files.readAllLines(path, StandardCharsets.UTF_8).get(2);
-             Car1_3 = Double.parseDouble(str1);
+            Car1_3 = Double.parseDouble(str1);
             String  str2= Files.readAllLines(path, StandardCharsets.UTF_8).get(3);
-             Car1_4 = Integer.parseInt(str2);
+            Car1_4 = Integer.parseInt(str2);
 
             Car2_1 = Files.readAllLines(path, StandardCharsets.UTF_8).get(4);
             Car2_2 = Files.readAllLines(path, StandardCharsets.UTF_8).get(5);
@@ -86,10 +86,7 @@ public class Main {
         Car car3=new Car(Car3_1,Car3_2, Car3_3, Car3_4);
 
 
-        System.out.println("Hello and welcome!\n");
-//        Car car1=new Car("#C12P1","Fortuner", 4000, 7);
-//        Car car2=new Car("#C12P2","Audi", 7000, 5);
-//        Car car3=new Car("#C12P3","BMW", 10000, 2);
+        System.out.println("\nHello and welcome to our rental services!\n");
 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your name:");
@@ -99,7 +96,7 @@ public class Main {
         System.out.println("Enter your age:");
         int customerAge=sc.nextInt();
 
-        System.out.println("Cars Available:\n");
+        System.out.println("\nCars Available:\n");
         System.out.println("➥\t"+car1.getCarId()+"\n\t"+car1.getCarModelName()+"\n\t"+car1.getCarPrice()+"\n\t"+car1.getCarSeat()+"\n\n");
         System.out.println("➥\t"+car2.getCarId()+"\n\t"+car2.getCarModelName()+"\n\t"+car2.getCarPrice()+"\n\t"+car2.getCarSeat()+"\n\n");
         System.out.println("➥\t"+car3.getCarId()+"\n\t"+car3.getCarModelName()+"\n\t"+car3.getCarPrice()+"\n\t"+car3.getCarSeat()+"\n\n");
@@ -113,6 +110,7 @@ public class Main {
             int rentalDays=sc.nextInt();
             System.out.println("Enter destination distance:");
             double destinationDistance=sc.nextDouble();
+            System.out.println("\n");
 
             Availability carAvail=new Availability(rentalDays,destinationDistance);
             carAvail.getAvailability();
@@ -151,7 +149,7 @@ public class Main {
 
         System.out.println("Do you want to rent?(Y/N)");
         char input=sc.next().charAt(0);
-        System.out.println((input == 'Y' || input == 'y') ? "Confirmation done!!" : "Sorry! Confirmation interrupted.");
+        System.out.println((input == 'Y' || input == 'y') ? "\nCongratulations!! Confirmation done." : "Sorry! Confirmation interrupted.");
 
     }
 }
