@@ -87,9 +87,6 @@ public class Main {
 
 
         System.out.println("\nHello and welcome to our rental services!\n");
-//        Car car1=new Car("#C12P1","Fortuner", 4000, 7);
-//        Car car2=new Car("#C12P2","Audi", 7000, 5);
-//        Car car3=new Car("#C12P3","BMW", 10000, 2);
 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your name:");
