@@ -1,0 +1,68 @@
+Hello and welcome to our rental services!
+
+1. Rent a car
+2. Return a car
+3. Exit
+Enter your choices :
+1
+Enter your name:
+Ram
+Enter your Aadhar no.:
+1234567
+Enter your age:
+23
+
+Cars Available:
+
+➥	#C12P1
+	Fortuner
+	4000.0
+	7
+
+
+➥	#C12P2
+	Audi
+	7000.0
+	5
+
+
+➥	#C12P3
+	BMW
+	10000.0
+	2
+
+
+Enter carId:
+#C12P1
+Enter rental Days:
+12
+Enter destination distance:
+23
+
+
+Car Price: 4000.0
+Taxes involved: 5.0%
+Total price: 50400.0
+Do you want to rent?(Y/N)
+Y
+
+Congratulations!! Confirmation done.
+
+Hello and welcome to our rental services!
+
+1. Rent a car
+2. Return a car
+3. Exit
+Enter your choices :
+2
+Enter carId:
+#C12P1
+Car Returned Successfully!!
+
+Hello and welcome to our rental services!
+
+1. Rent a car
+2. Return a car
+3. Exit
+Enter your choices :
+3
